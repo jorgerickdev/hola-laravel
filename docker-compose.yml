@@ -1,0 +1,11 @@
+services:
+  laravel:
+    image: php:8.4-cli
+    container_name: hola-laravel
+    working_dir: /app
+    volumes:
+      - ./src:/app
+    ports:
+      - "8000:8000"
+    stdin_open: true
+    tty: true
